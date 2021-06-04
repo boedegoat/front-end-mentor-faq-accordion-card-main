@@ -149,7 +149,7 @@ body {
 }
 
 /* mobile breakpoints */
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
   .accordion {
     flex-direction: column;
     margin: 150px 27px 90px;
