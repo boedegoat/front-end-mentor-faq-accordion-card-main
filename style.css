@@ -21,6 +21,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .accordion {
@@ -130,11 +131,28 @@ body {
   overflow-y: auto;
 }
 
+.attribution {
+  color: #fff;
+  background: var(--gradient-violet);
+  padding: 15px;
+  cursor: default;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  font-size: clamp(10px, 3vw, 14px);
+}
+.attribution a {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 /* mobile breakpoints */
 @media (max-width: 1000px) {
   .accordion {
     flex-direction: column;
-    margin: 150px 27px 27px;
+    margin: 150px 27px 90px;
   }
 
   .accordion__img {
