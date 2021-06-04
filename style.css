@@ -29,7 +29,6 @@ body {
   border-radius: 25px;
   display: flex;
   margin: 0 40px;
-  overflow: hidden;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
@@ -41,9 +40,24 @@ body {
 .accordion__img {
   display: flex;
   align-items: center;
+  background-image: url(images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 34% left 117%;
+  position: relative;
+  overflow: hidden;
 }
 .accordion__img img {
   transform: translateX(-5rem);
+}
+
+.box {
+  position: absolute;
+  z-index: 1;
+  top: 41%;
+  left: -12px;
+}
+.box img {
+  position: fixed;
 }
 
 .accordion__body {
