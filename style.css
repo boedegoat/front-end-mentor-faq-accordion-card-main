@@ -65,9 +65,43 @@ body {
   padding: 4.5rem 4.5rem 4.5rem 0;
 }
 
+.accordion__heading {
+  color: var(--text-primary-blue);
+}
+
 .accordion__question-list {
   list-style: none;
-  margin-top: 3.13rem;
+  margin-top: 1.5rem;
+  font-size: 12px;
+}
+
+.accordion__question {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion__question-toggler {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-grayish-2);
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--divider);
+}
+.accordion__question-toggler:hover {
+  color: var(--text-primary-red);
+}
+.accordion__question-toggler::after {
+  content: url(images/icon-arrow-down.svg);
+}
+
+.accordion__question-answer {
+  max-height: 0;
+  overflow: hidden;
 }
 
 /* mobile breakpoints */
